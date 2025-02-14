@@ -1,0 +1,147 @@
+.team {
+    background-color: #10105b;
+    padding-top: 300px;
+    border-radius: 0 0 25px 25px;
+}
+
+.team__wrapper {
+    overflow: hidden;
+}
+
+.team__title {
+    color: #FFFFFF;
+    font-size: 37px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.swiper-team {
+    width: 100%;
+    height: max-content;
+    padding-bottom: 20px;
+}
+
+.swiper-wrapper-team {
+    padding-bottom: 60px;
+}
+
+.swiper-pagination-team {
+    display: flex;
+    justify-content: center;
+}
+
+.team__slide {
+    display: flex;
+    gap: 0 25px;
+    align-items: flex-start;
+}
+
+.team__slide-item {
+    padding-left: 20px;
+}
+
+.team__slide-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.team__slide-title {
+    margin-bottom: 15px;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.team__slide-text {
+    color: #FFFFFF;
+    position: relative;
+    font-size: 12px;
+}
+
+.team__slide-text::after {
+    content: "";
+    background-color: #2500ff;
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: -16px;
+}
+
+.team__slide-img {
+    width: fit-content;
+    height: max-content;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.team__slide-img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+    .team__slide-img {
+        width: 250px;
+        height: 320px;
+    }
+
+    .team__slide-text {
+        font-size: 14px;
+    }
+
+    .team__slide-title {
+        margin-bottom: 25px;
+        font-size: 22px;
+    }
+
+    .team__slide {
+        gap: 0 45px;
+    }
+
+    .team__slide-item {
+        margin-bottom: 15px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .team__slide-img:hover {
+        transform: scale(1);
+    }
+
+    .team__title {
+        font-size: 34px;
+    }
+
+    .team__slide-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .team__slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team__slide-img {
+        width: 200px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .team__slide-title {
+        text-align: center;
+    }
+
+    .team__title {
+        font-size: 30px;
+    }
+
+    .team__wrapper {
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+
+    .swiper-wrapper-team {
+        padding-bottom: 20px;
+    }
+}

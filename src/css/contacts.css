@@ -1,0 +1,174 @@
+.contacts {
+    background-color: #F5F5F5;
+}
+
+.contacts__container {
+    padding-bottom: 60px;
+}
+
+.contacts__whatsapp-mobile {
+    display: none;
+}
+
+.contacts__title {
+    text-align: left;
+    color: #040436;
+    font-size: 37px;
+    margin-bottom: 45px;
+}
+
+.contacts__telephon {
+    color: #000000;
+    transition: all 0.3s ease-in-out;
+}
+
+.contacts__telephon:hover {
+    color: blue;
+}
+
+.contacts__telephon-svg {
+    margin-right: 10px;
+}
+
+.contacts__telephon-box:first-child {
+    margin-bottom: 15px;
+}
+
+.contacts__block1 {
+    margin-bottom: 35px;
+}
+
+.contacts__whatsapp {
+    color: rgb(54, 54, 239);
+    display: block;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contacts__whatsapp svg {
+    margin-left: 5px;
+}
+
+.contacts__telegramm svg {
+    margin-left: 5px;
+}
+
+.contacts__telegramm {
+    color: rgb(54, 54, 239);
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.contacts__telegramm:hover {
+    color: rgb(0, 0, 255);
+}
+
+
+.contacts__whatsapp:hover {
+    color: rgb(0, 0, 255);
+}
+
+
+.contacts__block2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.contacts__block2 a {
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.contacts__block2 a:hover {
+    transform: scale(1.3);
+}
+
+.contacts__block2 a:not(:last-child) {
+    margin-right: 15px;
+}
+
+.contacts__wrapper {
+    display: flex;
+}
+
+.contacts__box1 {
+    width: 30%;
+    margin-right: 30px;
+}
+
+.contacts__box1 {
+    width: 40%;
+}
+
+.contacts__text {
+    font-size: 18px;
+}
+
+.contacts__text:first-of-type {
+    font-size: 18px;
+}
+
+.contacts__text:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.contacts__text:last-of-type {
+    margin-bottom: 30px;
+}
+
+.contacts__address {
+    font-size: 19px;
+}
+
+.contacts__address-text {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+
+    .contacts__block2 a:hover {
+        transform: scale(1);
+    }
+
+    .contacts__title {
+        font-size: 34px;
+    }
+
+    .contacts__text {
+        font-size: 16px !important;
+    }
+
+    .contacts__address {
+        font-size: 16px !important;
+    }
+
+    .contacts__address-text {
+        font-size: 16px !important;
+    }
+
+    .contacts__telephon {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contacts__title {
+        font-size: 30px;
+    }
+
+    .contacts__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts__box1 {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 35px;
+    }
+
+    .contacts__container {
+        padding-bottom: 30px;
+    }
+}

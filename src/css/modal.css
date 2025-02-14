@@ -1,0 +1,33 @@
+.modal__box {
+    border-radius: 30px;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1001;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    -webkit-box-shadow: 4px 4px 41px 39px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 41px 39px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 41px 39px rgba(34, 60, 80, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.modal__box--active {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.modal-success__text {
+    font-size: 20px;
+    color: green;
+}
+
+.modal-error__text {
+    font-size: 15px;
+    color: red;
+}

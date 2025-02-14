@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БМ-Право</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div>
+        <div class="modal__box modal-success__box">
+            <p class="modal-success__text">
+                Заявка отправлена, скоро с вами свяжутся.
+            </p>
+        </div>
+
+        <div class="modal__box modal-error__box">
+            <p class="modal-error__text">
+                Произошла ошибка, попробуйте позже.
+            </p>
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li>
+                    <a href="#header" id="menuCommon">Главная</a>
+                </li>
+                <li>
+                    <a href="#info" id="menuInfo">О компании</a>
+                </li>
+                <li>
+                    <a href="#services" id="menuServices">Наши услуги</a>
+                </li>
+                <li>
+                    <a href="#team" id="menuTeam">Наша команда</a>
+                </li>
+                <li>
+                    <a href="#partners" id="menuTrust">Нам доверяют</a>
+                </li>
+                <li>
+                    <a href="#contacts" id="menuContacts">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sticky-widgets">
+            <div class="sticky-widgets__container">
+                <button class="burger" id="burger-button"></button>
+                <div class="dropdown">
+                    <button class="dropbtn" id="language-button">Выберите язык</button>
+                    <div class="dropdown-content" id="language-dropdown">
+                        <a href="#" data-value="ru">RU</a>
+                        <a href="#" data-value="en">EN</a>
+                        <a href="#" data-value="cn">CN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header" id="header">
+            <div class="container">
+                <img class="header__logo" src="./images/logo.png" alt="Логотип">
+                <h1 class="header__title" id="headerTitle">ЮРИДИЧЕСКИЕ И КОНСАЛТИНГОВЫЕ УСЛУГИ</h1>
+                <hr class="header__line">
+                <p class="header__description">
+                    <span class="header__text" id="headerYears">
+                        15 ЛЕТ ОПЫТА
+                    </span>
+
+                    <span id="headerText">
+                        ПОМОГУТ В РЕШЕНИИ ВАШИХ ПРАВОВЫХ ПРОБЛЕМ
+                    </span>
+                </p>
+            </div>
+        </header>
+
+        <main id="info">
+            <section class="info">
+                <div class="container">
+                    <h2 class="info__title" id="infoTitle">О КОМПАНИИ</h2>
+                    <p class="info__description" id="infoText1">
+                        Российская юридическая компания, обладающая устойчивыми партнерскими отношениями с юридическими
+                        структурами в Европе и Азии. Оказываем поддержку российским и зарубежным партнерам в области
+                        открытия бизнеса в России, корпоративного права, сделок M&A, налогового и антимонопольного
+                        права, интеллектуальной собственности, международной торговли и таможни, уголовного права, в
+                        сфере санкционного регулирования, консультирование по вопросам эмбарго и ограничений, судебного
+                        разрешения споров. Предоставляем консультации по широкому спектру правовых вопросов, включая
+                        семейное и наследственное право, строительство и недвижимость, сопровождение реструктуризации и
+                        банкротства, комплаенс и внутренние расследования, корпоративные конфликты и противодействие
+                        рейдерству.
+                    </p>
+                    <p class="info__description" id="infoText2">
+                        БМ-право — это команда опытных адвокатов, юристов и психологов, в активе которых опыт
+                        урегулирования сотен судебных процессов и сопровождения комплексных проектов. Мы выстраиваем
+                        отношения с клиентами таким образом, чтобы условия нашего сотрудничества были максимально
+                        комфортными и выгодными.
+                    </p>
+                    <p class="info__description info__description3" id="infoText3">
+                        Для решения задач клиентов предлагаем комплексный подход, сочетающий юридический консалтинг,
+                        психологическую поддержку, взаимодействие со средствами массовой информации, представление
+                        интересов в государственных и судебных органах.
+                    </p>
+                    <hr class="info__line">
+                    <hr class="info__line2">
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <ul class="about-us__list">
+                        <li class="about-us__item">
+                            <div class="about-us__box">
+                                <img class="about-us__img" src="./images/profi1.svg" alt="Первый навык">
+                            </div>
+                            <h3 class="about-us__title" id="aboutExperience">Опыт и профессионализм</h3>
+                        </li>
+                        <li class="about-us__item">
+                            <div class="about-us__box">
+                                <img class="about-us__img" src="./images/profi2.svg" alt="Второй навык">
+                            </div>
+                            <h3 class="about-us__title" id="aboutGlobal">Работа на международном уровне</h3>
+                        </li>
+                        <li class="about-us__item">
+                            <div class="about-us__box">
+                                <img class="about-us__img" src="./images/profi3.svg" alt="Второй навык">
+                            </div>
+                            <h3 class="about-us__title" id="aboutCompetencies">Широкие компетенции</h3>
+                        </li>
+                        <li class="about-us__item">
+                            <div class="about-us__box">
+                                <img class="about-us__img" src="./images/profi4.svg" alt="Второй навык">
+                            </div>
+                            <h3 class="about-us__title" id="aboutPrice">Эффективность при разумной цене</h3>
+                        </li>
+                        <li class="about-us__item">
+                            <div class="about-us__box">
+                                <img class="about-us__img" src="./images/profi5.svg" alt="Второй навык">
+                            </div>
+                            <h3 class="about-us__title" id="aboutDevelopment">Постоянное совершенствование и развитие
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <div class="container services__wrapper" id="services">
+                    <h2 class="services__title" id="servicesTitle">НАШИ УСЛУГИ</h2>
+                    <div class="accordion-container">
+                        <div class="ac services__item">
+                            <h2 class="ac-header">
+                                <button type="button" class="ac-trigger services__item-button"
+                                    id="servicesItem1Title">Юридическое сопровождение
+                                    инвестиционных проектов в России</button>
+                            </h2>
+                            <div class="ac-panel">
+                                <ul class="ac-text services__list">
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem1Text1">открытие представительства</p>
+                                    </li>
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem1Text2">регистрация компании</p>
+                                    </li>
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem1Text3">создание совместного
+                                            предприятия</p>
+                                    </li>
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem1Text4">сделка M&A или
+                                            Greenfield-инвестиции</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ac services__item">
+                            <h2 class="ac-header">
+                                <button type="button" class="ac-trigger services__item-button"
+                                    id="servicesItem2Title">Корпоративное право, в
+                                    т.ч. и международное</button>
+                            </h2>
+                            <div class="ac-panel">
+                                <ul class="ac-text services__list">
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem2Text1">подготовка и проведение сделок
+                                            M&A</p>
+                                    </li>
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem2Text2">DueDiligence</p>
+                                    </li>
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem2Text3">залог долей и акций</p>
+                                    </li>
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem2Text4">сопровождение корпоративных
+                                            процедур</p>
+                                    </li>
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem2Text5">подготовка корпоративной
+                                            документации</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ac services__item">
+                            <h2 class="ac-header">
+                                <button type="button" class="ac-trigger services__item-button"
+                                    id="servicesItem3Title">Недвижимость и
+                                    строительство</button>
+                            </h2>
+                            <div class="ac-panel">
+                                <ul class="ac-text services__list">
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem3Text1">сопровождение сделок по
+                                            приобретению и продаже
+                                            недвижимого имущества и по аренде</p>
+                                    </li>
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem3Text2">правовая поддержка при
+                                            реализации строительных
+                                            проектов</p>
+                                    </li>
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem3Text3">регистрационные процедуры и
+                                            иное</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ac services__item">
+                            <h2 class="ac-header">
+                                <button type="button" class="ac-trigger services__item-button"
+                                    id="servicesItem4Title">Антимонопольное
+                                    регулирование</button>
+                            </h2>
+                            <div class="ac-panel">
+                                <ul class="ac-text services__list">
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem4Text1">консалтинг
+                                            в области антимонопольного законодательства</p>
+                                    </li>
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem4Text2">представление интересов
+                                            клиентов в рамках проверок,
+                                            проводимых антимонопольным органом</p>
+                                    </li>
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem4Text3">подготовка документов в
+                                            антимонопольные органы</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ac services__item">
+                            <h2 class="ac-header">
+                                <button type="button" class="ac-trigger services__item-button"
+                                    id="servicesItem5Title">Юридические услуги по
+                                    вопросам
+                                    интеллектуальной собственности и товарных
+                                    знаков</button>
+                            </h2>
+                            <div class="ac-panel">
+                                <ul class="ac-text services__list">
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem5Text1">вопросы по защите интересов
+                                            интеллектуальной собственности</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ac services__item">
+                            <h2 class="ac-header">
+                                <button type="button" class="ac-trigger services__item-button"
+                                    id="servicesItem6Title">Консалтинг в области
+                                    налогового права и разрешение налоговых споров</button>
+                            </h2>
+                            <div class="ac-panel">
+                                <ul class="ac-text services__list">
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem6Text1">разрешения споров в области
+                                            налогового права</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ac services__item">
+                            <h2 class="ac-header">
+                                <button type="button" class="ac-trigger services__item-button"
+                                    id="servicesItem7Title">Разрешение споров и
+                                    медиация</button>
+                            </h2>
+                            <div class="ac-panel">
+                                <ul class="ac-text services__list">
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem7Text1">представление интересов в
+                                            арбитражных судах и судах
+                                            общей юрисдикции в рамках
+                                            любых споров, в частности: корпоративные, антимонопольные, административные,
+                                            коммерческие и хозяйственные споры, защита деловой репутации</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ac services__item">
+                            <h2 class="ac-header">
+                                <button type="button" class="ac-trigger services__item-button"
+                                    id="servicesItem8Title">Таможенное право и
+                                    внешнеторговое регулирование</button>
+                            </h2>
+                            <div class="ac-panel">
+                                <ul class="ac-text services__list">
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem8Text1">консультации по вопросам
+                                            таможенного законодательства
+                                            и регулирования внешнеэкономической деятельности</p>
+                                    </li>
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem8Text2">правовая помощь в
+                                            урегулирование конфликтов при
+                                            взаимодействии с таможенными органами РФ и иное</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ac services__item">
+                            <h2 class="ac-header">
+                                <button type="button" class="ac-trigger services__item-button"
+                                    id="servicesItem9Title">Услуги частным клиентам,
+                                    в частности в следующих направлениях</button>
+                            </h2>
+                            <div class="ac-panel">
+                                <ul class="ac-text services__list">
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem9Text1">семейное и наследственное
+                                            право</p>
+                                    </li>
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem9Text2">приобретение/продажа и
+                                            владение движимым и недвижимым
+                                            имуществом</p>
+                                    </li>
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem9Text3">жилищное законодательство и
+                                            таможенное право</p>
+                                    </li>
+                                    <li class="services__item-elem">
+                                        <p class="services__text" id="servicesItem9Text4">психологическая помощь в
+                                            решении семейных конфликтов
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="team" id="team">
+                <div class="container team__wrapper">
+                    <h2 class="team__title" id="teamTitle">ПОЛНОМОЧИЯ И ПРАКТИКИ</h2>
+                    <div class="swiper-team">
+                        <div class="swiper-wrapper swiper-wrapper-team">
+                            <div class="swiper-slide team__slide">
+                                <img src="./images/team1.jpg" alt="Первый член коммпании" class="team__slide-img">
+                                <div>
+                                    <h3 class="team__slide-title" id="teamPerson1">Иван Борисенко-Мещеряков</h3>
+                                    <ul>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson1Skill1">
+                                                Корпоративные конфликты, противодействие рейдерству
+                                            </p>
+                                        </li>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson1Skill2">
+                                                Комплаенс и внутренние расследования
+                                            </p>
+                                        </li>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson1Skill3">
+                                                Банкротство
+                                            </p>
+                                        </li>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson1Skill4">
+                                                Корпоративное право, купля-продажа ценных бумаг.
+                                            </p>
+                                        </li>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson1Skill5">
+                                                Инвестиционная деятельность и девелопмент.
+                                            </p>
+                                        </li>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson1Skill6">
+                                                Адвокатские расследования, представление интересов коммерческой
+                                                организации в уголовных делах.
+                                            </p>
+                                        </li>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson1Skill7">
+                                                Судебно-претензионная работа.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide team__slide">
+                                <img src="./images/team2.jpg" alt="Второй член коммпании" class="team__slide-img">
+                                <div>
+                                    <h3 class="team__slide-title" id="teamPerson2">Алла Борисенко-Мещерякова</h3>
+                                    <ul>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson2Skill1">
+                                                Семейное и наследственное право
+                                            </p>
+                                        </li>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson2Skill2">
+                                                Корпоративное право
+                                            </p>
+                                        </li>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson2Skill3">
+                                                Слияние и поглощение (M&A)
+                                            </p>
+                                        </li>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson2Skill4">
+                                                Авторское право
+                                            </p>
+                                        </li>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson2Skill5">
+                                                Международное частное право
+                                            </p>
+                                        </li>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson2Skill6">
+                                                Налоговое право
+                                            </p>
+                                        </li>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson2Skill7">
+                                                Судебно-претензионная работа
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide team__slide">
+                                <img src="./images/team4.jpg" alt="Четвёртый член коммпании" class="team__slide-img">
+                                <div>
+                                    <h3 class="team__slide-title" id="teamPerson3">Владимир Мещеряков</h3>
+                                    <ul>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson3Skill1">
+                                                Коммерческое и земельное право
+                                            </p>
+                                        </li>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson3Skill2">
+                                                Недвижимость и строительство
+                                            </p>
+                                        </li>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson3Skill3">
+                                                Административное право, в том числе ДТП
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide team__slide">
+                                <img src="./images/team3.jpg" alt="Третий член коммпании" class="team__slide-img">
+                                <div>
+                                    <h3 class="team__slide-title" id="teamPerson4">Сергей Ковалёв</h3>
+                                    <ul>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson4Skill1">
+                                                Внешнеэкономическая деятельность
+                                            </p>
+                                        </li>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson4Skill2">
+                                                Таможня
+                                            </p>
+                                        </li>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson4Skill3">
+                                                Интеллектуальное право
+                                            </p>
+                                        </li>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson4Skill4">
+                                                Правовая помощь в сфере санкционного регулирования, консультирование по
+                                                вопросам эмбарго и ограничений.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide team__slide">
+                                <img src="./images/team5.jpg" alt="Пятый член коммпании" class="team__slide-img">
+                                <div>
+                                    <h3 class="team__slide-title" id="teamPerson5">Улугбек Тургунов</h3>
+                                    <ul>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson5Skill1">
+                                                Судебно-претензионная работа
+                                            </p>
+                                        </li>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson5Skill2">
+                                                Административное право
+                                            </p>
+                                        </li>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson5Skill3">
+                                                Миграционное право
+                                            </p>
+                                        </li>
+                                        <li class="team__slide-item">
+                                            <p class="team__slide-text" id="teamPerson5Skill4">
+                                                Уголовное право
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination-team"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="partners" id="partners">
+                <div class="partners__wrapper">
+                    <h2 class="partners__title" id="partnersTitle">НАМ ДОВЕРЯЮТ</h2>
+                    <div class="swiper-partners">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide partners__slide">
+                                <img src="./images/partner1.png" alt="Партнёр 1">
+                            </div>
+                            <div class="swiper-slide partners__slide">
+                                <img src="./images/parnter2.png" alt="Партнёр 2">
+                            </div>
+                            <div class="swiper-slide partners__slide">
+                                <img src="./images/partner3.png" alt="Партнёр 3">
+                            </div>
+                            <div class="swiper-slide partners__slide">
+                                <img src="./images/partner4.png" alt="Партнёр 4">
+                            </div>
+                            <div class="swiper-slide partners__slide">
+                                <img src="./images/partner5.png" alt="Партнёр 5">
+                            </div>
+                            <div class="swiper-slide partners__slide">
+                                <img src="./images/partner6.png" alt="Партнёр 6">
+                            </div>
+                            <div class="swiper-slide partners__slide">
+                                <img src="./images/partner7.png" alt="Партнёр 7">
+                            </div>
+                            <div class="swiper-slide partners__slide">
+                                <img src="./images/partner8.png" alt="Партнёр 8">
+                            </div>
+                            <div class="swiper-slide partners__slide">
+                                <img src="./images/partner9.png" alt="Партнёр 9">
+                            </div>
+                            <div class="swiper-slide partners__slide">
+                                <img src="./images/partner10.png" alt="Партнёр 10">
+                            </div>
+                            <div class="swiper-slide partners__slide">
+                                <img src="./images/partner11.png" alt="Партнёр 11">
+                            </div>
+                            <div class="swiper-slide partners__slide">
+                                <img src="./images/partner12.png" alt="Партнёр 12">
+                            </div>
+                            <div class="swiper-slide partners__slide">
+                                <img src="./images/partner13.png" alt="Партнёр 13">
+                            </div>
+                            <div class="swiper-slide partners__slide">
+                                <img src="./images/partner14.png" alt="Партнёр 14">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination-partners"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="feedback">
+                <div class="container">
+                    <div class="feedback__wrapper">
+                        <div class="feedback__container">
+                            <h2 class="feedback__title" id="feedbackTitle">СВЯЗАТЬСЯ С НАМИ</h2>
+                            <p class="feedback__description" id="feedbackText">Оставьте свои контакты и мы обязательно с
+                                Вами свяжемся</p>
+
+                            <form action="#" class="feedback__form">
+                                <div class="feedback__inner">
+                                    <div class="feedback__box">
+                                        <input class="feedback__input feedback__input-email"
+                                            placeholder="email@yandex.ru" type="email" id="email" name="email">
+                                        <span class="feedback__error-message feedback__error-email">Поле не
+                                            заполнено</span>
+                                    </div>
+                                    <div class="feedback__box">
+                                        <input class="feedback__input feedback__input-tel"
+                                            placeholder="+7 (999) 555 00 00" type="tel" id="tel" name="tel">
+                                        <span class="feedback__error-message feedback__error-tel">Поле не
+                                            заполнено</span>
+                                    </div>
+                                    <div class="feedback__box">
+                                        <input class="feedback__input feedback__input-name" placeholder="Имя"
+                                            type="text" id="name" name="from_name">
+                                        <span class="feedback__error-message feedback__error-name">Поле не
+                                            заполнено</span>
+                                    </div>
+                                </div>
+                                <div class="feedback__button-container">
+                                    <button class="feedback__button" type="submit"
+                                        id="feedbackButton">Отправить</button>
+                                    <span class="loader"></span>
+                                </div>
+                            </form>
+                        </div>
+                        <img class="feedback__logo" src="./images/logo.png" alt="Логотип">
+                    </div>
+                </div>
+            </section>
+            <section class="contacts" id="contacts">
+                <div class="container contacts__container">
+                    <h2 class="contacts__title" id="contactsTitle">КОНТАКТЫ</h2>
+                    <div class="contacts__wrapper">
+                        <div class="contacts__box1">
+                            <div class="contacts__block1">
+                                <div class="contacts__telephon-box">
+                                    <svg class="contacts__telephon-svg" xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                    </svg>
+                                    <a class="contacts__telephon" href="tel:89776859300">+7 (977) 685 93 00</a>
+
+                                </div>
+                                <div class="contacts__telephon-box">
+                                    <svg class="contacts__telephon-svg" xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                    </svg>
+                                    <a class="contacts__telephon" href="tel:89689853063">+7 (968) 985 30 63</a>
+                                </div>
+                            </div>
+                            <div class="contacts__block2">
+                                <a href="https://t.me/bmpravo" target="_blank">
+                                    <svg width="43" height="43" fill="none">
+                                        <path fill="#000000" fill-rule="evenodd"
+                                            d="M.554 21.791c0 11.604 9.407 21.01 21.01 21.01s21.01-9.407 21.01-21.01S33.168.781 21.564.781C9.961.781.554 10.188.554 21.791m17.158 9.63.358-5.356 9.742-8.792c.427-.38-.094-.564-.661-.22l-12.023 7.585-5.194-1.62c-1.122-.344-1.13-1.115.252-1.669l20.238-7.803c.924-.42 1.816.222 1.463 1.636l-3.446 16.241c-.241 1.155-.938 1.43-1.905.897l-5.25-3.878-2.523 2.453-.024.024c-.282.274-.516.502-1.027.502"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://m.vk.com/bmpravo" target="_blank">
+                                    <svg width="43" height="43">
+                                        <path fill="#000000" fill-rule="evenodd"
+                                            d="M21.99.781C10.387.781.98 10.188.98 21.791s9.407 21.01 21.01 21.01S43 33.394 43 21.79 33.594.781 21.99.781m1.928 28.307c-.217.23-.642.275-.642.275h-1.407s-3.102.184-5.836-2.61c-2.98-3.046-5.613-9.091-5.613-9.091s-.152-.397.013-.588c.185-.216.69-.23.69-.23l3.362-.02s.317.05.543.214c.188.136.293.388.293.388s.543 1.349 1.262 2.569c1.406 2.382 2.06 2.903 2.536 2.648.695-.372.486-3.368.486-3.368s.013-1.087-.35-1.572c-.28-.375-.81-.484-1.043-.515-.19-.024.12-.456.523-.65.606-.29 1.674-.307 2.936-.294.985.01 1.268.07 1.652.161.892.212.864.889.804 2.35-.018.438-.039.945-.039 1.531q-.001.199-.008.416c-.02.75-.044 1.607.458 1.926.258.163.888.024 2.463-2.602.747-1.245 1.307-2.708 1.307-2.708s.123-.26.313-.373c.194-.114.457-.079.457-.079l3.537-.021s1.064-.125 1.235.347c.181.493-.397 1.648-1.842 3.54-1.371 1.794-2.039 2.454-1.977 3.039.044.427.478.813 1.31 1.57 1.738 1.584 2.204 2.417 2.316 2.618l.02.036c.78 1.27-.864 1.368-.864 1.368l-3.143.044s-.674.13-1.563-.468c-.465-.314-.92-.826-1.353-1.313-.662-.745-1.273-1.432-1.794-1.27-.876.274-.85 2.125-.85 2.125s.007.397-.192.607"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                                <a href="mailto:bmpravo@gmail.com" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
+                                        <path fill="#000"
+                                            d="M 20.617188 0.546875 C 28.957031 0.550781 35.300781 4.078125 39.640625 11.128906 C 43.367188 18.273438 43.253906 25.355469 39.304688 32.375 C 35.121094 38.789062 29.171875 42.121094 21.457031 42.371094 C 13.480469 42.070312 7.417969 38.542969 3.273438 31.789062 C -0.453125 24.644531 -0.339844 17.5625 3.609375 10.539062 C 7.621094 4.414062 13.289062 1.082031 20.617188 0.546875 Z" />
+                                        <path fill="#FAFAFA"
+                                            d="M 11.632812 12.976562 C 18.183594 12.960938 24.734375 12.976562 31.285156 13.015625 C 31.859375 13.253906 32.265625 13.660156 32.5 14.234375 C 32.558594 19.078125 32.558594 23.921875 32.5 28.765625 C 32.316406 29.398438 31.910156 29.800781 31.285156 29.984375 C 24.707031 30.039062 18.125 30.039062 11.546875 29.984375 C 10.945312 29.746094 10.570312 29.3125 10.414062 28.679688 C 10.359375 23.867188 10.359375 19.050781 10.414062 14.234375 C 10.667969 13.660156 11.074219 13.238281 11.632812 12.976562 Z" />
+                                        <path fill="#A7A7A7"
+                                            d="M 12.472656 14.402344 C 18.460938 14.292969 24.453125 14.292969 30.445312 14.402344 C 28.164062 16.808594 25.898438 19.230469 23.640625 21.667969 C 22.554688 22.410156 21.378906 22.578125 20.113281 22.171875 C 19.835938 22.003906 19.554688 21.835938 19.273438 21.667969 C 17.019531 19.230469 14.75 16.808594 12.472656 14.402344 Z" />
+                                        <path fill="#8B8B8B"
+                                            d="M 11.800781 15.578125 C 11.714844 19.539062 11.6875 23.515625 11.714844 27.503906 C 11.617188 23.535156 11.605469 19.503906 11.671875 15.410156 C 11.734375 15.457031 11.777344 15.511719 11.800781 15.578125 Z" />
+                                        <path fill="#707070"
+                                            d="M 31.117188 15.578125 C 31.199219 19.566406 31.226562 23.570312 31.199219 27.589844 C 29.546875 25.320312 27.925781 23.023438 26.328125 20.703125 C 27.90625 18.972656 29.503906 17.265625 31.117188 15.578125 Z" />
+                                        <path fill="#000"
+                                            d="M 30.277344 28.597656 C 24.382812 28.679688 18.476562 28.707031 12.554688 28.679688 C 14.199219 26.375 15.867188 24.082031 17.554688 21.792969 C 19.664062 24.0625 22.003906 24.332031 24.566406 22.59375 C 24.863281 22.308594 25.144531 22.015625 25.40625 21.710938 C 27.0625 23.984375 28.6875 26.28125 30.277344 28.597656 Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <a class="contacts__whatsapp" href="#" target="_blank" id="contactsWhatsapp">Напишите нам в
+                                WhatsApp
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg>
+                            </a>
+                            <a class="contacts__telegramm" href="#" target="_blank" id="contactsTelegramm">Напишите нам
+                                в Telegramm
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-telegram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="contacts__box2">
+                            <p class="contacts__text" id="contactsName">Общество с ограниченной ответственностью
+                                «БМ-право»</p>
+                            <p class="contacts__text">ИНН 9721033908, ОГРН 5167746482130</p>
+                            <div>
+                                <h3 class="contacts__address" id="contactsAddress">Юридический адрес:</h3>
+                                <p class="contacts__address-text" id="contactsNameAddress">109028, г. Москва, Покровский
+                                    бульвар, дом 8, строение
+                                    1</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <iframe class="map"
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A24d33391c3efaa380a579714cfe2807fda16838711bbee416ed7266f604a41e1&amp;source=constructor"></iframe>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <p class="footer__text" id="footerTitle">© 2024 БМ-Право. Все права защищены.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+    <script>
+        new Accordion('.accordion-container');
+    </script>
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
